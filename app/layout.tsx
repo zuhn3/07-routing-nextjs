@@ -5,7 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
-import { Analytics } from "@vercel/analytics/react"; 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -40,9 +40,6 @@ export default function RootLayout({
           <Footer />
           <div id="modal-root"></div>
         </TanStackProvider>
-
-        
-        <Analytics />
       </body>
     </html>
   );
