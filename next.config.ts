@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/notes", // apply only to /notes (safer than global)
+        source: "/notes(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
